@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="introduction">
+        <h1>Cullinary Product Addition App</h1>
+        <h2>created with HTML, CSS, and JS</h2>
+        <p>
+          This is a customer input system. <br />
+          Using this you can add any items to the list, even unrealated ones.
+        </p>
+        <br />
+        <p>
+          This project will take what you type in the text inputs and add it to
+          a list below. You can add as many items as you would like into the
+          list. You can also optionally add a description to the item, and it
+          will include that with the list item.
+        </p>
+        <br />
+        <p>
+          This project will include ways to display a message when you submit an
+          empty input, and clear the input once subbmitted.
+        </p>
+      </div>
+      <form class="items">
+        <div class="msg"></div>
+        <div class="submit">
+          <h2>Enter Product Name:</h2>
+          <input
+            type="text"
+            name="itemText"
+            id="itemText"
+            title="Item Text"
+            placeholder="Item name"
+          />
+          <input
+            type="text"
+            name="itemDesc"
+            id="itemDesc"
+            title="Item Description"
+            placeholder="Item description (Optional)"
+          />
+          <input
+            type="submit"
+            name="itemSubmit"
+            id="itemSubmit"
+            title="Item Submit"
+          />
+        </div>
+        <div class="products-list">
+          <ul id="products"></ul>
+        </div>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
